@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: auto;
+
+        }
+        header {
+            margin: 0;
+            background-color: rgb(172, 172, 172);    
+        }
+        nav {
+            padding: 15px 15px;
+            background-color: gray;
+        }
+        nav > h1 {
+            margin: auto;
+            padding-bottom: 5px;
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+            font-style: bold;
+        }
+        main {
+            display: inline-block;
+            padding: 5px;
+            
+        }
+        article {
+            background-color: rgb(228, 228, 228);
+            border-radius: 4px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+        }
+        
+        aside {
+            background-color: gray;
+            text-align: left;
+            padding: 5px 12px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+        }
+        footer {
+            color: white;
+            background-color: rgb(37, 37, 37);
+            text-align: center;
+            padding: 8px;
+        }
+        article > p, aside > p, footer > p, article > h2 {
+            margin: auto;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body id="lado-esquerdo">
+    <header>
+        <nav>
+            <h1>Meu site</h1>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Fim da escala 6x1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae adipisci nostrum expedita earum architecto quod, iure minima cum assumenda. Unde ducimus aliquid perspiciatis quas eligendi voluptas culpa. Amet, minus expedita.</p>
+                <aside>
+                    <p>Artigo escrito por Igor Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Conteúdo do canal Cursoemvideo</p>
+    </footer>
+    <body id="lado-direito">
+        
+    </body>
+</body>
+</html>

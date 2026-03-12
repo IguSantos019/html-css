@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body {
+    margin: auto;
+    width: 100%;
+}
+main {
+    width: 700px;
+    text-align: justify;
+    padding: 20px;
+}
+.container {
+    display: inline-block;
+}
+h1 {
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.introducao {
+    width: 550px;
+}
+.gutenberg {
+    width: 120px;
+}
+.img-e-text {
+    display: flex;
+    margin: 30px;
+}
+.text-gutenberg {
+    margin-left: 30px;
+    
+}
+.hr {
+    color: rgb(150, 149, 149); border: 1px solid; width: 100%;
+}
