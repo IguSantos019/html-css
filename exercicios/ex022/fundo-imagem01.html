@@ -5,18 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de imagem de fundo</title>
     <style>
-        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url(imagens-cap19/wallpaper001.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+
+        }
+        .container {
+            display: inline-block;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 1px 1px 5px black;
+            margin: 10px;
+        }
+        div#c1 {
+            background-color: skyblue;
+            color: black;
+            font-weight: bold;
+        }
+        div#c2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+            color: blue;
+            font-weight: bold;
+
+        }
+        div#c3 {
+            background-image: url(imagens-cap19/pattern001.png);
+            color: yellow;
+            font-weight: bold;
+            
+        }
+        div#c4 {
+            font-weight: bold;
+        }
+        p  {
+            width: 250px;
+            text-align: center;
+            margin: auto;
+            padding-top: 100px;
+        }
+        strong {
+            text-decoration: un;
+        }
     </style>
 </head>
 <body>
     <div class="container" id="c1">
-
+        <p>Fundo com <strong>background-color</strong> skyblue</p>
     </div>
     <div class="container" id="c2">
-
+        <p>Fundo com <strong>background-image</strong> com <strong>linear gradient</strong></p>
     </div>
     <div class="container" id="c3">
-
+    <p>Fundo com <strong>background-image</strong> com <strong>url</strong></p>
     </div>
+    <br>
+    <div class="container" id="c4">
+        <p>Fundo com <strong>background-image</strong> com <strong>url</strong></p>
+    </div>
+
 </body>
 </html>
