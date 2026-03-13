@@ -15,18 +15,51 @@
     padding: 0;
 }
 header {
-
+    height: 350px;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 header > h1 {
     font-family: var(--fonte-titulo);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-variant: small-caps;
 }
 header > p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+p > a:hover {
+    text-decoration: underline;
 }
 body {
+    
     
 }
 main {
     font-family: var(--fonte-paragrafos);
-    font-size: 4em;
+    font-size: 4.5em;
+    
+}
+div#teste {
+    
+}
+article#primeiro {
+    margin-left: 30px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    font-weight: normal;
+    background-color: white;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+}
+article#segundo {
+
 }
