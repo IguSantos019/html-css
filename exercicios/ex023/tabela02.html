@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: rgb(54, 54, 54);
+            color: white;
+        }
+        th {
+            font-weight: bold;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+        .numero {
+            text-align: right;
+            width: 120px;
+        }
+        .posiçao, .porcentagem {
+            text-align: center;
+            
+        }
+        .posiçao {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            THEAD
+                TH, TR, TD
+            TBODY
+                TH, TR, TD
+            TFOOT
+                TH, TR, TD
+        TABLE
+    
+    -->
+
+    <table>
+        <thead>
+            <tr> <!-- cabeçalho-->
+                <th scope="col" class="posiçao">Posição</td>
+                <th scope="col">Unidade federativa</td>
+                <th scope="col">População</td>
+                <th scope="col">% da pop. total</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!-- Primeira linha do corpo da tabela -->
+                <td class="posiçao">1</td>
+                <td>São paulo</td>
+                <td class="numero">45 919 049</td>
+                <td class="porcentagem">21,9%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">2</td>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+                <td class="porcentagem">10%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 264 943</td>
+                <td class="porcentagem">8,2%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">4</td>
+                <td>Bahia</td>
+                <td class="numero">14 873 064</td>
+                <td class="porcentagem">7,1%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">5</td>
+                <td>Paraná</td>
+                <td class="numero">11 433 957</td>
+                <td class="porcentagem">5,4%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 377 239</td>
+                <td class="porcentagem">5,4%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">7</td>
+                <td>Pernambuco</td>
+                <td class="numero">9 557 071</td>
+                <td class="porcentagem">4,5%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">8</td>
+                <td>Ceará</td>
+                <td class="numero">9 132 078</td>
+                <td class="porcentagem">4,3%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">9</td>
+                <td>Pará</td>
+                <td class="numero">8 602 865</td>
+                <td class="porcentagem">4,1%</td>
+            </tr>
+            <tr>
+                <td class="posiçao">10</td>
+                <td>Santa Catarina</td>
+                <td class="numero">7 164 788</td>
+                <td class="porcentagem">3,4%</td>
+            </tr>
+            
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
