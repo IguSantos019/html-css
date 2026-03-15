@@ -10,6 +10,7 @@
         }
         table {
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             background-color: lightgray;
@@ -20,6 +21,11 @@
         thead {
             background-color: rgb(54, 54, 54);
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(54, 54, 54);
         }
         tbody tr:nth-child(2n) {
             background-color: lightgray;
@@ -136,8 +142,12 @@
 
         </tbody>
         <tfoot>
-
+            <tr style="background-color: gray; color: black; font-weight: bold; font-size: 1.1em;" >
+                <td style="text-align: center;" colspan="2"><strong>Total de habitantes</strong></td>
+                <td colspan="2" class="numero">156.493.845</td>
+            </tr>
         </tfoot>
     </table>
+    
 </body>
 </html>
