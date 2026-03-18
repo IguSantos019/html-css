@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Informações cadastrais</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset style="width: 500px;">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" autocomplete="name" required maxlength="15px">
+            </p>
+            <p>
+                <label for="isobr">Sobrenome</label>
+                <input type="text" name="Sobrenome" id="isobr">
+            </p>
+            <p><label for="imail">E-mail</label>
+                <input type="email" name="mail" id="imail" placeholder="Digite seu e-mail"  autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel">
+                <!--Estudar mais sobre RegEx-->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
