@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/media-queries.css">
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -27,8 +27,9 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur hic laborum fugiat! Doloremque adipisci, dicta libero ipsum voluptatem vitae alias inventore, similique assumenda delectus hic minus accusamus harum culpa dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, culpa maiores accusamus nemo vitae ad molestiae quae adipisci magnam placeat eum maxime? Laudantium dolor in facilis excepturi accusantium totam doloremque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit fugit exercitationem nisi? Eius sunt quo pariatur alias? Sapiente suscipit ipsum asperiores nam animi vel esse ipsa, recusandae quos numquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit fugit exercitationem nisi? Eius sunt quo pariatur alias? Sapiente suscipit ipsum asperiores nam animi vel esse ipsa, recusandae quos numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam incidunt ipsa. Laborum natus id suscipit enim voluptas beatae itaque laboriosam voluptatem. A quaerat laborum sed? Tempore at est voluptatibus?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aspernatur perferendis? Nostrum, praesentium fuga. Nemo ex illo optio est totam at obcaecati odit amet, dolorem excepturi dolor vitae, facere illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eius quia laboriosam quidem laudantium. Aliquam eius hic rem. Illum, quisquam possimus reprehenderit ducimus maxime ab iusto voluptatem blanditiis laborum illo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ratione tenetur recusandae. Eos quidem, animi laudantium odio laborum numquam quibusdam quae doloribus consequuntur sapiente eveniet tempora, eius fugiat possimus voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum unde doloremque corporis accusantium doloribus, quidem, quibusdam mollitia, dolorem hic iste sit rerum porro voluptas blanditiis beatae. Eum ullam possimus cum?</p>
         </article>
     </main>
     <script>
@@ -37,6 +38,14 @@
                 itens.style.display = "none"
             } else {
                 itens.style.display = 'block' 
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block' 
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
