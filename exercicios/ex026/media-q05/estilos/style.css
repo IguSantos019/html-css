@@ -16,18 +16,29 @@ body {
 }
 header {
     background-color: gray;
-    padding-top: 7vh;
+    padding-top: 3vh;
 }
 header h1 {
     text-align: center;
 }
-header menu {
-    padding-top: 2vh;
-    
+#menu-icon {
+    display: block;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+#menu-icon:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 header ul li {
     list-style-type: none;
     display: inline;
+}
+menu {
+    display: none;
 }
 menu a {
     display: block;
